@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+        <!--<script src="jquary.js"></script--44>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p>welcome to ipcs global</p>
+        <p>welcome to ipcs global</p>
+        <p>welcome to ipcs global</p>
+        <p>welcome to ipcs global</p>
+        <p id="res"></p>
+    </body>
+    <script>
+        $("p").click();
+        $("p").click(function()
+        
+        {
+            alert("you")
+            $("p").hide() 
+            $(this).hide()  
+        });
+        var x=4;
+        var y=78;
+        var z=x+y;
+        document.getElementById("res").innerHTML=z;
+        $("#res").html(z);    
+    </script>
+</html>

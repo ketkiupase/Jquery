@@ -1,0 +1,19 @@
+
+def homepage(request):
+    return render(request,"header.html")
+def aboutus(request):
+    return render(request,"aboutus.html")
+def contactus(request):
+    finalanswer=0
+    try:
+        #n1=request.GET["first_name"]
+       # n2=request.GET["last_name"]
+       # print(n1+" "+n2)
+        n1=int(request.GET.get("first_name"))
+        n2=int(request.GET.get("last_name"))
+        finalanswer=n1+n2
+       
+        
+    except:
+        pass
+    return render(request,"contact-us.html",{'output':finalanswer})
